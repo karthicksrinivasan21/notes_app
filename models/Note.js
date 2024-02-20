@@ -15,9 +15,13 @@ const noteSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
-  updatedAt: {
+  deletedAt: {
     type: Date,
     default: Date.now
+  },
+  isActive: {
+    type: Boolean,
+    default: true
   }
 });
 
