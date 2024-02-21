@@ -4,3 +4,5 @@ class ModelConstants {
         this.NOTE = 'note';
     }
 }
+
+module.exports = new ModelConstants()

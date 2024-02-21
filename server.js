@@ -13,9 +13,11 @@ connectDB();
 
 const userRouter = require('./routes/users'); 
 const authRouter = require('./routes/auth');
+const noteRouter = require('./routes/note');
 
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/notes', noteRouter);
 
 
 app.use(errorHandler);
